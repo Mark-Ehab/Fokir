@@ -1,0 +1,1173 @@
+/***************************************General Styles***************************************/
+* {
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+}
+
+body {
+  margin: 0px;
+}
+
+body::selection {
+  background-color: rgb(255, 48, 91);
+  color: white;
+}
+
+h1 {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 70px;
+  font-weight: bolder;
+  margin-block: 0px;
+}
+
+h2 {
+  font-family: "Source Sans 3", sans-serif;
+  margin-block: 0px;
+}
+
+h3 {
+  font-family: "Source Sans 3", sans-serif;
+  margin-block: 0px;
+}
+
+h4 {
+  font-family: "Source Sans 3", sans-serif;
+  margin-block: 0px;
+}
+
+p {
+  margin-block: 0px;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+textarea,
+button {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+.Container {
+  margin: auto;
+  width: 92.51425272996118%;
+  /* background-color: tan; */
+}
+
+.Text-Align-Center {
+  text-align: center;
+}
+
+.Clear-Fix {
+  clear: both;
+}
+
+/***************************************Landing Section Style***************************************/
+.Landing-Section {
+  background-color: white;
+}
+
+.Background-Image {
+  position: relative;
+  background-image: url(./../images/header.jpg);
+  background-position: center;
+  background-size: cover;
+  height: auto;
+  height: 100vh;
+  background-attachment: fixed;
+}
+
+.Background-Image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.Background-Image * {
+  position: relative;
+}
+
+/***************************************Navigation Bar Style***************************************/
+div.Nav-Bar {
+  /* background-color: cornflowerblue; */
+}
+
+div.Nav-Bar div.Nav-Bar-Left {
+  /* background-color: burlywood; */
+  width: 25%;
+  float: left;
+  padding-inline: 15px;
+}
+
+div.Nav-Bar div.Nav-Bar-Left a {
+  color: RGB(255, 48, 91);
+  font-size: 24px;
+  font-weight: 800;
+  display: block;
+  padding-block: 18px;
+}
+
+div.Nav-Bar div.Nav-Bar-Right {
+  /* background-color: cadetblue; */
+  width: 75%;
+  float: left;
+  padding-inline: 15px 15px;
+}
+
+div.Nav-Bar div.Nav-Bar-Right ul {
+  padding-left: 15px;
+  width: 64%;
+  float: right;
+}
+
+div.Nav-Bar div.Nav-Bar-Right ul li {
+  display: inline-block;
+  padding-inline: 10px;
+}
+
+div.Nav-Bar div.Nav-Bar-Right ul li a {
+  color: white;
+  font-weight: 300;
+  padding-block: 20px;
+  display: block;
+  transition: 0.75s color;
+}
+
+div.Nav-Bar div.Nav-Bar-Right ul li a:hover {
+  color: RGB(255, 48, 91);
+}
+
+div.Nav-Bar div.Nav-Bar-Right ul li.Nav-Bar-Right-Last-Link {
+  display: inline-block;
+  padding-right: 0px;
+}
+
+/***************************************Home Section Style***************************************/
+div.Home-Section {
+  /* background-color: brown; */
+  margin-top: 145px;
+}
+
+div.Home-Section div.Container div.Home-Section-Content {
+  width: 90%;
+  margin-inline: auto;
+}
+
+div.Home-Section div.Container div span {
+  color: white;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  display: block;
+}
+
+div.Home-Section div.Container div h1 {
+  color: RGB(255, 48, 91);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  line-height: 77px;
+}
+
+div.Home-Section div.Container div div {
+  margin-bottom: 10px;
+}
+
+div.Home-Section div.Container div div span.Home-Section-Second-Span-Word-1 {
+  color: white;
+  text-transform: capitalize;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 26px;
+  font-weight: 300;
+  margin-bottom: 10px;
+  display: inline-block;
+  overflow-x: hidden;
+  margin: 0px;
+}
+
+@keyframes word-2-animation {
+  0% {
+    width: 0px;
+  }
+  25% {
+    width: 103.4px;
+  }
+  50% {
+    width: 0px;
+  }
+  100% {
+    width: 0px;
+    border-right: 0px;
+  }
+}
+
+div.Home-Section div.Container div div span.Home-Section-Second-Span-Word-2 {
+  color: white;
+  text-transform: capitalize;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 26px;
+  font-weight: 300;
+  display: inline-block;
+  overflow-x: hidden;
+  margin: 0px;
+  border-right: 3px solid white;
+  animation: word-2-animation 4.5s 0s infinite;
+}
+
+@keyframes word-3-animation {
+  0% {
+    width: 0px;
+    border-right: 0px;
+  }
+  50% {
+    width: 0px;
+  }
+  75% {
+    width: 118.7px;
+  }
+  100% {
+    width: 0px;
+  }
+}
+
+div.Home-Section div.Container div div span.Home-Section-Second-Span-Word-3 {
+  color: white;
+  text-transform: capitalize;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 26px;
+  font-weight: 300;
+  display: inline-block;
+  overflow-x: hidden;
+  margin: 0px;
+  border-right: 3px solid white;
+  animation: word-3-animation 4.5s 0s infinite;
+}
+
+/***************************************About Section Style***************************************/
+div.About-Section {
+  /* background-color: crimson; */
+  padding-block: 100px 125px;
+}
+
+div.About-Section-Left {
+  /* background-color: teal; */
+  width: 41.3%;
+  padding-inline: 15px 15px;
+  padding-left: 97.49px;
+  float: left;
+}
+
+div.About-Section-Left div.About-Section-Left-Profile-Pic-Frame {
+  /* background-color: blueviolet; */
+  width: 100%;
+  box-shadow: 0 0 0 8px rgb(85, 85, 85) inset;
+  border-radius: 5px;
+}
+
+div.About-Section-Left
+  div.About-Section-Left-Profile-Pic-Frame
+  div.About-Section-Left-Profile-Pic {
+  /* background-color: blue; */
+  width: 100%;
+  border-radius: 5px;
+  position: relative;
+  position: relative;
+  top: 25px;
+  left: 25px;
+  overflow: hidden;
+}
+
+div.About-Section-Left
+  div.About-Section-Left-Profile-Pic-Frame
+  div.About-Section-Left-Profile-Pic
+  img {
+  width: 100%;
+  border-radius: 5px;
+  display: block;
+}
+
+div.About-Section-Left
+  div.About-Section-Left-Profile-Pic-Frame
+  div.About-Section-Left-Profile-Pic
+  div.About-Section-Left-Profile-Pic-Overlay-Layer {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: 0.5s top;
+  padding-top: 216.875px;
+}
+
+div.About-Section-Left
+  div.About-Section-Left-Profile-Pic-Frame
+  div.About-Section-Left-Profile-Pic:hover
+  div.About-Section-Left-Profile-Pic-Overlay-Layer {
+  top: 0px;
+}
+
+div.About-Section-Left
+  div.About-Section-Left-Profile-Pic-Frame
+  div.About-Section-Left-Profile-Pic
+  div.About-Section-Left-Profile-Pic-Overlay-Layer
+  ul {
+  /* background-color: bisque; */
+  width: 50%;
+  margin-inline: auto;
+}
+
+div.About-Section-Left
+  div.About-Section-Left-Profile-Pic-Frame
+  div.About-Section-Left-Profile-Pic
+  div.About-Section-Left-Profile-Pic-Overlay-Layer
+  ul
+  li {
+  display: inline-block;
+  padding-right: 15px;
+}
+
+div.About-Section-Left
+  div.About-Section-Left-Profile-Pic-Frame
+  div.About-Section-Left-Profile-Pic
+  div.About-Section-Left-Profile-Pic-Overlay-Layer
+  ul
+  li
+  i {
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+  transition: 0.5s color;
+}
+
+div.About-Section-Left
+  div.About-Section-Left-Profile-Pic-Frame
+  div.About-Section-Left-Profile-Pic
+  div.About-Section-Left-Profile-Pic-Overlay-Layer
+  ul
+  li
+  a
+  i:hover {
+  color: RGB(255, 48, 91);
+}
+
+div.About-Section-Right {
+  /* background-color: darkblue; */
+  width: 58.7%;
+  padding-inline: 85px 15px;
+  float: left;
+}
+
+div.About-Section-Right div.About-Section-Right-Content {
+  /* background-color: red; */
+}
+
+div.About-Section-Right
+  div.About-Section-Right-Content
+  div.About-Section-Right-Intro
+  h2 {
+  font-size: 34px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: RGB(51, 51, 51);
+  margin-bottom: 25px;
+  line-height: 22px;
+}
+
+div.About-Section-Right
+  div.About-Section-Right-Content
+  div.About-Section-Right-Intro
+  h2::before {
+  content: "";
+  background-color: RGB(255, 48, 91);
+  width: 4px;
+  height: 22px;
+  margin-right: 9px;
+  display: inline-block;
+}
+
+div.About-Section-Right
+  div.About-Section-Right-Content
+  div.About-Section-Right-Intro
+  p {
+  color: RGB(85, 85, 85);
+  font-size: 16px;
+  font-weight: 400;
+  padding-bottom: 25px;
+  border-bottom: 0.667px dashed RGB(85, 85, 85);
+  margin-bottom: 25px;
+  line-height: 25px;
+}
+
+div.About-Section-Right
+  div.About-Section-Right-Content
+  div.About-Section-Right-Profile
+  ul
+  li {
+  margin-bottom: 25px;
+}
+
+div.About-Section-Right
+  div.About-Section-Right-Content
+  div.About-Section-Right-Profile
+  ul
+  li.About-Section-Right-Profile-Col-Left {
+  width: 50%;
+  float: left;
+}
+
+div.About-Section-Right
+  div.About-Section-Right-Content
+  div.About-Section-Right-Profile
+  ul
+  li.About-Section-Right-Profile-Col-Right {
+  width: 50%;
+  float: left;
+}
+
+div.About-Section-Right
+  div.About-Section-Right-Content
+  div.About-Section-Right-Profile
+  ul
+  li
+  span {
+  color: RGB(51, 51, 51);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+div.About-Section-Right
+  div.About-Section-Right-Content
+  div.About-Section-Right-Profile
+  ul
+  li
+  p {
+  color: RGB(85, 85, 85);
+  font-size: 16px;
+  font-weight: 400;
+  display: inline-block;
+}
+
+div.About-Section-Right
+  div.About-Section-Right-Content
+  div.About-Section-Right-Profile
+  ul
+  li
+  a {
+  margin-bottom: 25px;
+  color: RGB(126, 126, 126);
+}
+
+div.About-Section-Right
+  div.About-Section-Right-Content
+  div.About-Section-Right-Profile
+  div.About-Section-Right-Profile-Btns
+  a {
+  padding: 10px 24px;
+  margin-right: 10px;
+  background-color: rgb(255, 48, 91);
+  color: white;
+  display: inline-block;
+  border-radius: 5px;
+  line-height: 25px;
+}
+
+div.About-Section-Right
+  div.About-Section-Right-Content
+  div.About-Section-Right-Profile
+  div.About-Section-Right-Profile-Btns
+  a:hover {
+  background-color: rgb(236, 36, 3);
+}
+
+div.About-Section-Right
+  div.About-Section-Right-Content
+  div.About-Section-Right-Profile
+  div.About-Section-Right-Profile-Btns
+  a
+  i {
+  margin-left: 5px;
+}
+
+/***************************************Our Services Section Style***************************************/
+div.Services-Section {
+  background-color: rgb(241, 241, 241);
+  padding-block: 100px 54px;
+}
+
+div.Services-Section h2 {
+  /* background-color: darkslategrey; */
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+div.Services-Section h2::before {
+  content: "";
+  background-color: transparent;
+  width: 70px;
+  padding-block: 4px 5px;
+  border-block: 0.667px solid rgb(255, 48, 91);
+  margin-inline: 535px;
+  position: absolute;
+  left: 15px;
+  top: 45px;
+}
+
+div.Services-Section h2::after {
+  content: "";
+  background-color: rgb(255, 48, 91);
+  width: 160px;
+  height: 0.75px;
+  margin-inline: 490px;
+  position: absolute;
+  left: 15px;
+  top: 50px;
+}
+
+div.Services-Section-Card {
+  /* background-color: darkmagenta; */
+  width: 25%;
+  float: left;
+  padding: 40px 15px;
+}
+
+div.Services-Section-Card div {
+  /* background-color: rgb(0, 139, 102); */
+}
+
+div.Services-Section-Card i {
+  font-size: 36px;
+  font-weight: 600;
+  color: RGB(255, 48, 91);
+  margin-bottom: 20px;
+  transition: 0.3s transform;
+}
+
+div.Services-Section-Card h3 {
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+div.Services-Section-Card:hover {
+  background-color: white;
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+div.Services-Section-Card:hover i {
+  transform: scale(1.2, 1.2);
+}
+
+/***************************************Our Portfolio Section Style***************************************/
+div.Portfolio-Section {
+  /* background-color: gold; */
+  padding-block: 100px 70px;
+}
+
+div.Portfolio-Section h2 {
+  /* background-color: darkslategrey; */
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+div.Portfolio-Section h2::before {
+  content: "";
+  background-color: transparent;
+  width: 70px;
+  padding-block: 4px 5px;
+  border-block: 0.667px solid rgb(255, 48, 91);
+  margin-inline: 535px;
+  position: absolute;
+  left: 15px;
+  top: 45px;
+}
+
+div.Portfolio-Section h2::after {
+  content: "";
+  background-color: rgb(255, 48, 91);
+  width: 160px;
+  height: 1px;
+  margin-inline: 490px;
+  position: absolute;
+  left: 15px;
+  top: 50px;
+}
+
+div.Portfolio-Section ul {
+  margin-bottom: 50px;
+}
+
+div.Portfolio-Section ul li {
+  display: inline-block;
+  padding: 3px 12px;
+}
+
+div.Portfolio-Section ul li button {
+  background-color: transparent;
+}
+
+div.Portfolio-Section ul li button span {
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.Selected-Button {
+  color: rgb(255, 48, 91);
+}
+
+div.Portfolio-Section div.Portfolio-Section-Card {
+  /* background-color: chocolate; */
+  padding-inline: 15px;
+  width: 33.333%;
+  float: left;
+}
+
+div.Portfolio-Section div.Portfolio-Section-Card div {
+  /* background-color: fuchsia; */
+  margin-bottom: 30px;
+  position: relative;
+}
+
+div.Portfolio-Section div.Portfolio-Section-Card div img {
+  width: 100%;
+  display: block;
+}
+
+div.Portfolio-Section div.Portfolio-Section-Card div div {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  transition: 0.5s opacity;
+}
+
+div.Portfolio-Section div.Portfolio-Section-Card div div:hover {
+  opacity: 1;
+}
+
+div.Portfolio-Section div.Portfolio-Section-Card div div i {
+  font-size: 20px;
+  color: RGB(255, 48, 91);
+  position: absolute;
+  bottom: 15px;
+  right: 12px;
+}
+
+/***************************************Stats Section Style***************************************/
+div.Stats-Section {
+  padding-block: 100px;
+  background-color: rgb(241, 241, 241);
+}
+
+div.Stats-Section ul li {
+  width: 25%;
+  padding-inline: 15px;
+  float: left;
+}
+
+div.Stats-Section ul li i {
+  font-size: 26px;
+  color: RGB(255, 48, 91);
+  margin-bottom: 15px;
+}
+
+div.Stats-Section ul li h3 {
+  font-size: 26px;
+  line-height: 28.594px;
+  color: RGB(51, 51, 51);
+  margin-bottom: 10px;
+}
+
+div.Stats-Section ul li h4 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 17.594px;
+  color: RGB(85, 85, 85);
+}
+
+/***************************************Client's Feedback Section Style***************************************/
+div.Client-Feedback-Section {
+  /* background-color: khaki; */
+  padding-block: 100px;
+}
+
+div.Client-Feedback-Section h2 {
+  /* background-color: darkslategrey; */
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+div.Client-Feedback-Section h2::before {
+  content: "";
+  background-color: transparent;
+  width: 70px;
+  padding-block: 4px 5px;
+  border-block: 0.667px solid rgb(255, 48, 91);
+  margin-inline: 535px;
+  position: absolute;
+  left: 15px;
+  top: 45px;
+}
+
+div.Client-Feedback-Section h2::after {
+  content: "";
+  background-color: rgb(255, 48, 91);
+  width: 160px;
+  height: 1px;
+  margin-inline: 490px;
+  position: absolute;
+  left: 15px;
+  top: 50px;
+}
+
+div.Client-Feedback-Section div.Client-Feedback-Item {
+  background-color: rgb(241, 241, 241);
+  width: 66.66581196581197%;
+  margin-inline: auto;
+  padding-inline: 15px;
+  border-radius: 5px;
+  padding: 40px;
+  line-height: 34.5px;
+  position: relative;
+  overflow: hidden;
+}
+
+div.Client-Feedback-Section div.Client-Feedback-Item div.Left-Top-Red-Arrow {
+  background-color: rgb(255, 48, 91);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 100%;
+  right: 34%;
+  transform: rotate(-45deg);
+}
+
+div.Client-Feedback-Section
+  div.Client-Feedback-Item
+  div.Client-Feedback-Item-Left {
+  /* background-color: deepskyblue; */
+  width: 15.7%;
+  position: relative;
+}
+
+div.Client-Feedback-Section
+  div.Client-Feedback-Item
+  div.Client-Feedback-Item-Left
+  img {
+  width: 100%;
+  border-radius: 50%;
+  margin-block: 12px;
+  display: block;
+  position: absolute;
+}
+
+div.Client-Feedback-Section
+  div.Client-Feedback-Item
+  div.Client-Feedback-Item-Right {
+  /* background-color: mediumvioletred; */
+  width: 100%;
+  padding-inline: 130px 40px;
+}
+
+div.Client-Feedback-Section
+  div.Client-Feedback-Item
+  div.Client-Feedback-Item-Right
+  h3 {
+  color: RGB(51, 51, 51);
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+div.Client-Feedback-Section
+  div.Client-Feedback-Item
+  div.Client-Feedback-Item-Right
+  a {
+  color: RGB(119, 119, 119);
+  font-family: "Source Sans 3";
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  display: block;
+}
+
+div.Client-Feedback-Section
+  div.Client-Feedback-Item
+  div.Client-Feedback-Item-Right
+  a
+  span {
+  font-family: "Source Sans 3";
+}
+
+div.Client-Feedback-Section
+  div.Client-Feedback-Item
+  div.Client-Feedback-Item-Right
+  p {
+  color: RGB(85, 85, 85);
+  font-size: 16px;
+  font-family: 400;
+  font-style: italic;
+  line-height: 25px;
+  margin-bottom: 15px;
+}
+
+div.Client-Feedback-Section
+  div.Client-Feedback-Item
+  div.Client-Feedback-Item-Right
+  ul {
+  line-height: 16px;
+  margin-bottom: 12px;
+}
+
+div.Client-Feedback-Section
+  div.Client-Feedback-Item
+  div.Client-Feedback-Item-Right
+  ul
+  li {
+  padding-right: 3px;
+  float: left;
+}
+
+div.Client-Feedback-Section
+  div.Client-Feedback-Item
+  div.Client-Feedback-Item-Right
+  ul
+  li
+  i {
+  color: rgb(241, 195, 13);
+}
+
+div.Client-Feedback-Section div.Client-Feedback-Slide-Buttons {
+  /* background-color: aquamarine; */
+  width: 4%;
+  margin-inline: auto;
+  margin-top: 5px;
+}
+
+div.Client-Feedback-Section
+  div.Client-Feedback-Slide-Buttons
+  div.Slide-Button-1,
+div.Client-Feedback-Section
+  div.Client-Feedback-Slide-Buttons
+  div.Slide-Button-2 {
+  border: 0.667px solid rgb(255, 48, 91);
+  margin-inline: 3px;
+  float: left;
+}
+
+div.Client-Feedback-Section
+  div.Client-Feedback-Slide-Buttons
+  div.Slide-Button-1 {
+  background-color: rgb(255, 48, 91);
+  /* width: 8.667px; */
+  height: 0.667px;
+  border-radius: 5px;
+  padding: 4px 12px;
+}
+div.Client-Feedback-Section
+  div.Client-Feedback-Slide-Buttons
+  div.Slide-Button-2 {
+  width: 8.667px;
+  height: 8.667px;
+  border-radius: 50%;
+}
+
+/***************************************Blog Section Style***************************************/
+div.Blog-Section {
+  background-color: rgb(241, 241, 241);
+  padding-block: 100px 70px;
+}
+
+div.Blog-Section h2 {
+  /* background-color: darkslategrey; */
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+div.Blog-Section h2::before {
+  content: "";
+  background-color: transparent;
+  width: 70px;
+  padding-block: 4px 5px;
+  border-block: 0.667px solid rgb(255, 48, 91);
+  margin-inline: 535px;
+  position: absolute;
+  left: 15px;
+  top: 45px;
+}
+
+div.Blog-Section h2::after {
+  content: "";
+  background-color: rgb(255, 48, 91);
+  width: 160px;
+  height: 1px;
+  margin-inline: 490px;
+  position: absolute;
+  left: 15px;
+  top: 50px;
+}
+
+div.Blog-Section div.Blog-Section-Card {
+  /* background-color: brown; */
+  width: 33.333%;
+  padding-inline: 15px;
+  float: left;
+}
+
+div.Blog-Section div.Blog-Section-Card div {
+  background-color: white;
+}
+
+div.Blog-Section div.Blog-Section-Card div a {
+  width: 100%;
+  display: block;
+}
+
+div.Blog-Section div.Blog-Section-Card div a img {
+  width: 100%;
+  display: block;
+}
+
+div.Blog-Section div.Blog-Section-Card div iframe {
+  width: 100%;
+  aspect-ratio: 1.780454028389139;
+  display: block;
+}
+
+div.Blog-Section div.Blog-Section-Card div div.Blog-Section-Card-Content {
+  padding: 20px;
+}
+
+div.Blog-Section div.Blog-Section-Card div div.Blog-Section-Card-Content span {
+  font-size: 16px;
+  font-weight: 400;
+  color: RGB(85, 85, 85);
+  margin-bottom: 15px;
+  display: block;
+}
+
+div.Blog-Section div.Blog-Section-Card div div.Blog-Section-Card-Content h3 {
+  margin-bottom: 15px;
+}
+
+div.Blog-Section div.Blog-Section-Card div div.Blog-Section-Card-Content h3 a {
+  color: black;
+  font-family: "Source Sans 3", sans-serif;
+  text-transform: capitalize;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+div.Blog-Section div.Blog-Section-Card div div.Blog-Section-Card-Content p {
+  color: RGB(85, 85, 85);
+  margin-bottom: 15px;
+  line-height: 25px;
+}
+
+div.Blog-Section
+  div.Blog-Section-Card
+  div
+  div.Blog-Section-Card-Content
+  .Read-More {
+  color: rgb(51, 51, 51);
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+div.Blog-Section div.Blog-Section-Card div div.Blog-Section-Card-Content a {
+  transition: 0.5s color;
+}
+
+div.Blog-Section
+  div.Blog-Section-Card
+  div
+  div.Blog-Section-Card-Content
+  a:hover {
+  color: rgb(255, 48, 91);
+}
+
+/***************************************Contact Section Style***************************************/
+div.Contact-Section {
+  padding-block: 100px;
+}
+
+div.Contact-Section h2 {
+  /* background-color: darkslategrey; */
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+div.Contact-Section h2::before {
+  content: "";
+  background-color: transparent;
+  width: 70px;
+  padding-block: 4px 5px;
+  border-block: 0.667px solid rgb(255, 48, 91);
+  margin-inline: 535px;
+  position: absolute;
+  left: 15px;
+  top: 45px;
+}
+
+div.Contact-Section h2::after {
+  content: "";
+  background-color: rgb(255, 48, 91);
+  width: 160px;
+  height: 1px;
+  margin-inline: 490px;
+  position: absolute;
+  left: 15px;
+  top: 50px;
+}
+
+div.Contact-Section div.Contact-Section-Content {
+  /* background-color: chartreuse; */
+  width: 66.66581196581197%;
+  margin: auto;
+}
+
+div.Contact-Section div.Contact-Section-Content ul {
+  /* background-color: blue; */
+}
+
+div.Contact-Section div.Contact-Section-Content ul li {
+  /* background-color: blueviolet; */
+  padding-inline: 15px;
+  display: block;
+  margin-bottom: 25px;
+}
+
+div.Contact-Section div.Contact-Section-Content ul li:first-child,
+div.Contact-Section div.Contact-Section-Content ul li:nth-child(2) {
+  width: 50%;
+  float: left;
+}
+
+div.Contact-Section div.Contact-Section-Content ul li:nth-child(3) {
+  width: 100%;
+}
+
+div.Contact-Section div.Contact-Section-Content ul li input {
+  width: 100%;
+  padding: 6px 12px;
+  border: 0.667px solid rgb(204, 204, 204);
+  border-radius: 5px;
+  line-height: 26.667px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+div.Contact-Section div.Contact-Section-Content ul li textarea {
+  width: 100%;
+  padding: 6px 12px;
+  border: 0.667px solid rgb(204, 204, 204);
+  border-radius: 5px;
+  height: 80px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+div.Contact-Section div.Contact-Section-Content ul li textarea:focus,
+div.Contact-Section div.Contact-Section-Content ul li input:focus {
+  outline: none;
+  border-color: rgb(255, 48, 91);
+}
+
+div.Contact-Section div.Contact-Section-Content button {
+  margin-inline: 15px;
+  padding-inline: 20px;
+  border: 0.667px solid rgb(255, 48, 91);
+  background-color: rgb(255, 48, 91);
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 38.667px;
+  border-radius: 6px;
+}
+
+/***************************************Footer Section Style***************************************/
+div.Footer-Section {
+  background-color: rgb(51, 51, 51);
+  padding-block: 50px;
+}
+
+div.Footer-Section ul {
+  /* background-color: brown; */
+  width: 13.5%;
+  margin-inline: auto;
+  line-height: 45px;
+}
+
+div.Footer-Section ul li {
+  width: 25%;
+  float: left;
+}
+
+div.Footer-Section ul li a {
+  padding-inline: 10px;
+}
+
+div.Footer-Section ul li a i {
+  color: white;
+  font-size: 18px;
+  transition: 0.5s color;
+}
+
+div.Footer-Section ul li a i:hover {
+  color: RGB(255, 48, 91);
+}
+
+div.Footer-Section p {
+  /* background-color: cornflowerblue; */
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+div.Footer-Section p a span {
+  color: RGB(255, 48, 91);
+  font-size: 16px;
+  font-weight: 400;
+}
