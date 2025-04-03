@@ -488,6 +488,7 @@ div.About-Section-Right
   display: inline-block;
   border-radius: 5px;
   line-height: 25px;
+  transition: 0.5s background-color;
 }
 
 div.About-Section-Right
@@ -1124,6 +1125,11 @@ div.Contact-Section div.Contact-Section-Content button {
   font-weight: 400;
   line-height: 38.667px;
   border-radius: 6px;
+  transition: 0.5s background-color;
+}
+
+div.Contact-Section div.Contact-Section-Content button:hover {
+  background-color: rgb(236, 36, 3);
 }
 
 /***************************************Footer Section Style***************************************/
