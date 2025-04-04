@@ -413,45 +413,48 @@
       <div class="Container">
         <h2 class="Text-Align-Center">Contact Us</h2>
         <div class="Contact-Section-Content">
-          <ul>
-            <li>
-              <input
-                type="text"
-                id="Name"
-                placeholder="Name"
-                name="Name"
-                required
-              />
-            </li>
-            <li>
-              <input
-                type="email"
-                id="Email"
-                placeholder="Email"
-                name="Email"
-                required
-              />
-            </li>
-            <div class="Clear-Fix"></div>
-            <li>
-              <input
-                type="text"
-                id="Subject"
-                placeholder="Subject"
-                name="Subject"
-                required
-              />
-            </li>
-            <li>
-              <textarea
-                name="Message for Me"
-                id="Message-for-me"
-                placeholder="Message for me"
-                required
-              ></textarea>
-            </li>
-          </ul>
-          <button type="submit">Send Message</button>
+          <form action="">
+            <ul>
+              <li>
+                <input
+                  type="text"
+                  id="Name"
+                  placeholder="Name"
+                  name="Name"
+                  minlength="2"
+                  required
+                />
+              </li>
+              <li>
+                <input
+                  type="email"
+                  id="Email"
+                  placeholder="Email"
+                  name="Email"
+                  required
+                />
+              </li>
+              <div class="Clear-Fix"></div>
+              <li>
+                <input
+                  type="text"
+                  id="Subject"
+                  placeholder="Subject"
+                  name="Subject"
+                  required
+                />
+              </li>
+              <li>
+                <textarea
+                  name="Message-for-Me"
+                  id="Message-for-me"
+                  placeholder="Message for me"
+                  required
+                ></textarea>
+              </li>
+            </ul>
+            <button type="submit">Send Message</button>
+          </form>
         </div>
       </div>
     </div>
