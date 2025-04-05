@@ -186,6 +186,8 @@ div.Home-Section div.Container div h1 {
 
 div.Home-Section div.Container div div {
   margin-bottom: 10px;
+  width: fit-content;
+  margin: auto;
 }
 
 div.Home-Section div.Container div div span.Home-Section-Second-Span-Word-1 {
@@ -200,22 +202,6 @@ div.Home-Section div.Container div div span.Home-Section-Second-Span-Word-1 {
   margin: 0px;
 }
 
-@keyframes word-2-animation {
-  0% {
-    width: 0px;
-  }
-  25% {
-    width: 103.4px;
-  }
-  50% {
-    width: 0px;
-  }
-  100% {
-    width: 0px;
-    border-right: 0px;
-  }
-}
-
 div.Home-Section div.Container div div span.Home-Section-Second-Span-Word-2 {
   color: white;
   text-transform: capitalize;
@@ -226,22 +212,27 @@ div.Home-Section div.Container div div span.Home-Section-Second-Span-Word-2 {
   overflow-x: hidden;
   margin: 0px;
   border-right: 3px solid white;
-  animation: word-2-animation 4.5s 0s infinite;
+  padding-right: 10px;
+  animation: word-2-animation 5s 0s infinite;
 }
 
-@keyframes word-3-animation {
+@keyframes word-2-animation {
   0% {
     width: 0px;
-    border-right: 0px;
+    padding-right: 0px;
+  }
+  25% {
+    width: 102.041px;
+    padding-right: 10px;
   }
   50% {
     width: 0px;
-  }
-  75% {
-    width: 118.7px;
+    padding-right: 0px;
   }
   100% {
     width: 0px;
+    padding-right: 0px;
+    border-right: 0px;
   }
 }
 
@@ -255,7 +246,28 @@ div.Home-Section div.Container div div span.Home-Section-Second-Span-Word-3 {
   overflow-x: hidden;
   margin: 0px;
   border-right: 3px solid white;
-  animation: word-3-animation 4.5s 0s infinite;
+  padding-right: 10px;
+  animation: word-3-animation 5s 0s infinite;
+}
+
+@keyframes word-3-animation {
+  0% {
+    width: 0px;
+    padding-right: 0px;
+    border-right: 0px;
+  }
+  50% {
+    width: 0px;
+    padding-right: 0px;
+  }
+  75% {
+    width: 117.395px;
+    padding-right: 10px;
+  }
+  100% {
+    width: 0px;
+    padding-right: 0px;
+  }
 }
 
 /***************************************About Section Style***************************************/
