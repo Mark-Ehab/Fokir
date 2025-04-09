@@ -131,7 +131,7 @@ div.Nav-Bar div.Nav-Bar-Right {
 
 div.Nav-Bar div.Nav-Bar-Right ul {
   padding-left: 15px;
-  width: 64%;
+  /* width: 64%; */
   float: right;
 }
 
