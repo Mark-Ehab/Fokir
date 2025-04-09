@@ -74,6 +74,7 @@ button {
 /***************************************Landing Section Style***************************************/
 .Landing-Section {
   background-color: white;
+  position: relative;
 }
 
 .Background-Image {
@@ -160,7 +161,9 @@ div.Nav-Bar div.Nav-Bar-Right ul li.Nav-Bar-Right-Last-Link {
 /***************************************Home Section Style***************************************/
 div.Home-Section {
   /* background-color: brown; */
-  margin-top: 145px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-85%);
 }
 
 div.Home-Section div.Container div.Home-Section-Content {
