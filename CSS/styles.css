@@ -542,10 +542,11 @@ div.Services-Section h2::before {
   width: 70px;
   padding-block: 4px 5px;
   border-block: 0.667px solid rgb(255, 48, 91);
-  margin-inline: 535px;
+  /* margin-inline: 535px; */
   position: absolute;
-  left: 15px;
+  left: 50%;
   top: 45px;
+  transform: translateX(-50%);
 }
 
 div.Services-Section h2::after {
@@ -553,10 +554,11 @@ div.Services-Section h2::after {
   background-color: rgb(255, 48, 91);
   width: 160px;
   height: 0.75px;
-  margin-inline: 490px;
+  /* margin-inline: 490px; */
   position: absolute;
-  left: 15px;
+  left: 50%;
   top: 50px;
+  transform: translateX(-50%);
 }
 
 div.Services-Section-Card {
@@ -617,10 +619,11 @@ div.Portfolio-Section h2::before {
   width: 70px;
   padding-block: 4px 5px;
   border-block: 0.667px solid rgb(255, 48, 91);
-  margin-inline: 535px;
+  /* margin-inline: 535px; */
   position: absolute;
-  left: 15px;
+  left: 50%;
   top: 45px;
+  transform: translateX(-50%);
 }
 
 div.Portfolio-Section h2::after {
@@ -628,10 +631,11 @@ div.Portfolio-Section h2::after {
   background-color: rgb(255, 48, 91);
   width: 160px;
   height: 1px;
-  margin-inline: 490px;
+  /* margin-inline: 490px; */
   position: absolute;
-  left: 15px;
+  left: 50%;
   top: 50px;
+  transform: translateX(-50%);
 }
 
 div.Portfolio-Section ul {
@@ -750,10 +754,11 @@ div.Client-Feedback-Section h2::before {
   width: 70px;
   padding-block: 4px 5px;
   border-block: 0.667px solid rgb(255, 48, 91);
-  margin-inline: 535px;
+  /* margin-inline: 535px; */
   position: absolute;
-  left: 15px;
+  left: 50%;
   top: 45px;
+  transform: translateX(-50%);
 }
 
 div.Client-Feedback-Section h2::after {
@@ -761,10 +766,11 @@ div.Client-Feedback-Section h2::after {
   background-color: rgb(255, 48, 91);
   width: 160px;
   height: 1px;
-  margin-inline: 490px;
+  /* margin-inline: 490px; */
   position: absolute;
-  left: 15px;
+  left: 50%;
   top: 50px;
+  transform: translateX(-50%);
 }
 
 div.Client-Feedback-Section div.Client-Feedback-Item {
@@ -941,10 +947,11 @@ div.Blog-Section h2::before {
   width: 70px;
   padding-block: 4px 5px;
   border-block: 0.667px solid rgb(255, 48, 91);
-  margin-inline: 535px;
+  /* margin-inline: 535px; */
   position: absolute;
-  left: 15px;
+  left: 50%;
   top: 45px;
+  transform: translateX(-50%);
 }
 
 div.Blog-Section h2::after {
@@ -952,10 +959,11 @@ div.Blog-Section h2::after {
   background-color: rgb(255, 48, 91);
   width: 160px;
   height: 1px;
-  margin-inline: 490px;
+  /* margin-inline: 490px; */
   position: absolute;
-  left: 15px;
+  left: 50%;
   top: 50px;
+  transform: translateX(-50%);
 }
 
 div.Blog-Section div.Blog-Section-Card {
@@ -1058,10 +1066,11 @@ div.Contact-Section h2::before {
   width: 70px;
   padding-block: 4px 5px;
   border-block: 0.667px solid rgb(255, 48, 91);
-  margin-inline: 535px;
+  /* margin-inline: 535px; */
   position: absolute;
-  left: 15px;
+  left: 50%;
   top: 45px;
+  transform: translateX(-50%);
 }
 
 div.Contact-Section h2::after {
@@ -1069,10 +1078,11 @@ div.Contact-Section h2::after {
   background-color: rgb(255, 48, 91);
   width: 160px;
   height: 1px;
-  margin-inline: 490px;
+  /* margin-inline: 490px; */
   position: absolute;
-  left: 15px;
+  left: 50%;
   top: 50px;
+  transform: translateX(-50%);
 }
 
 div.Contact-Section div.Contact-Section-Content {
