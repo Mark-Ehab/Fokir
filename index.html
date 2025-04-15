@@ -10,6 +10,7 @@
       Collaboration is my thing—I love working with teams, solving complex problems, and creating digital experiences that make an impact. Whether it's a sleek website or a powerful web app, I’m here to build something amazing. Let’s create something great together!"
     />
     <meta name="keywords" content="Web,Develment,Design,Portfolio" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,6 +26,7 @@
     <link rel="stylesheet" href="CSS/all.min.css" />
     <link rel="stylesheet" href="CSS/fontawesome.min.css" />
     <link rel="stylesheet" href="CSS/styles.css" />
+    <link rel="stylesheet" href="./CSS/media.css" />
   </head>
   <body>
     <!-- Landing Page -->
@@ -46,6 +48,9 @@
               </li>
             </ul>
             <div class="Clear-Fix"></div>
+          </div>
+          <div class="Nav-Bar-Triple-Bars">
+            <i class="fa-solid fa-bars"></i>
           </div>
           <div class="Clear-Fix"></div>
         </div>
@@ -70,12 +75,12 @@
     <!-- About Section -->
     <div class="About-Section" id="About">
       <div class="Container">
-        <div class="About-Section-Left">
+        <div class="About-Section-Left sm-100 md-50">
           <div class="About-Section-Left-Profile-Pic-Frame">
             <div class="About-Section-Left-Profile-Pic">
               <img src="./images/about.jpg" alt="Profile Pic" />
               <div class="About-Section-Left-Profile-Pic-Overlay-Layer">
-                <ul class="Text-Align-Center">
+                <ul>
                   <li>
                     <a href="index.html"
                       ><i class="fa-brands fa-facebook-f"></i
@@ -97,7 +102,7 @@
             </div>
           </div>
         </div>
-        <div class="About-Section-Right">
+        <div class="About-Section-Right sm-100 md-50">
           <div class="About-Section-Right-Content">
             <div class="About-Section-Right-Intro">
               <h2>Hello,</h2>
@@ -158,7 +163,7 @@
       <div class="Container Text-Align-Center">
         <h2>Our Services</h2>
         <div class="Services-Section-Card-Row">
-          <div class="Services-Section-Card">
+          <div class="Services-Section-Card md-50 lg-25">
             <div class="UI-UX-Design-1">
               <i class="fa fa-pen-ruler"></i>
               <h3>ui/ux design</h3>
@@ -168,7 +173,7 @@
               </p>
             </div>
           </div>
-          <div class="Services-Section-Card">
+          <div class="Services-Section-Card md-50 lg-25">
             <div class="App-Development">
               <i class="fa-solid fa-code"></i>
               <h3>app development</h3>
@@ -178,7 +183,7 @@
               </p>
             </div>
           </div>
-          <div class="Services-Section-Card">
+          <div class="Services-Section-Card md-50 lg-25">
             <div class="Product-Design">
               <i class="fa fa-chart-line"></i>
               <h3>product design</h3>
@@ -188,7 +193,7 @@
               </p>
             </div>
           </div>
-          <div class="Services-Section-Card">
+          <div class="Services-Section-Card md-50 lg-25">
             <div class="UI-UX-Design-2">
               <i class="fa-solid fa-gears"></i>
               <h3>ui/ux design</h3>
@@ -220,7 +225,7 @@
             <button><span>Branding</span></button>
           </li>
         </ul>
-        <div class="Portfolio-Section-Card">
+        <div class="Portfolio-Section-Card md-50 sm-100 lg-33">
           <div class="Clock">
             <img src="./images/portfolio/1.jpg" alt="Clock" />
             <div class="Portfolio-Section-Clock-Card-Overlay-Layer">
@@ -228,7 +233,7 @@
             </div>
           </div>
         </div>
-        <div class="Portfolio-Section-Card">
+        <div class="Portfolio-Section-Card md-50 sm-100 lg-33">
           <div class="Watch">
             <img src="./images/portfolio/2.jpg" alt="Watch" />
             <div class="Portfolio-Section-Watch-Card-Overlay-Layer">
@@ -236,7 +241,7 @@
             </div>
           </div>
         </div>
-        <div class="Portfolio-Section-Card">
+        <div class="Portfolio-Section-Card md-50 sm-100 lg-33">
           <div class="Tickets">
             <img src="./images/portfolio/3.jpg" alt="Tickets" />
             <div class="Portfolio-Section-Tickets-Card-Overlay-Layer">
@@ -244,7 +249,7 @@
             </div>
           </div>
         </div>
-        <div class="Portfolio-Section-Card">
+        <div class="Portfolio-Section-Card md-50 sm-100 lg-33">
           <div class="Shoe">
             <img src="./images/portfolio/4.jpg" alt="Shoe" />
             <div class="Portfolio-Section-Shoe-Card-Overlay-Layer">
@@ -252,7 +257,7 @@
             </div>
           </div>
         </div>
-        <div class="Portfolio-Section-Card">
+        <div class="Portfolio-Section-Card md-50 sm-100 lg-33">
           <div class="Miller-Co-Card">
             <img src="./images/portfolio/5.jpg" alt="Miller&Co Card" />
             <div class="Portfolio-Section-Miller-Co-Card-Overlay-Layer">
@@ -260,7 +265,7 @@
             </div>
           </div>
         </div>
-        <div class="Portfolio-Section-Card">
+        <div class="Portfolio-Section-Card md-50 sm-100 lg-33">
           <div class="IO-Device">
             <img src="./images/portfolio/6.jpg" alt="I/O Device" />
             <div class="Portfolio-Section-IO-Device-Card-Overlay-Layer">
@@ -275,22 +280,22 @@
     <div class="Stats-Section">
       <div class="Container Text-Align-Center">
         <ul>
-          <li>
+          <li class="sm-100 md-25">
             <i class="fa-solid fa-users"></i>
             <h3>200</h3>
             <h4>Team Members</h4>
           </li>
-          <li>
+          <li class="sm-100 md-25">
             <i class="fa-regular fa-copy"></i>
             <h3>345</h3>
             <h4>Complete Projects</h4>
           </li>
-          <li>
+          <li class="sm-100 md-25">
             <i class="fa-solid fa-cloud-arrow-down"></i>
             <h3>1800</h3>
             <h4>Files Downloaded</h4>
           </li>
-          <li>
+          <li class="sm-100 md-25">
             <i class="fa-solid fa-mug-saucer"></i>
             <h3>1200</h3>
             <h4>Lines Of Code</h4>
@@ -305,13 +310,13 @@
         <h2 class="Text-Align-Center">Client's Feedback</h2>
         <div class="Client-Feedback-Item">
           <div class="Left-Top-Red-Arrow"></div>
-          <div class="Client-Feedback-Item-Left">
+          <div class="Client-Feedback-Item-Left sm-100">
             <img
               src="./images/feedback.jpg"
               alt="Feedback's User Profile Pic"
             />
           </div>
-          <div class="Client-Feedback-Item-Right">
+          <div class="Client-Feedback-Item-Right sm-100">
             <h3>Alex ander</h3>
             <a href="index.html"
               ><i class="fa-solid fa-location-dot"></i> <span>United</span></a
@@ -331,6 +336,7 @@
               <div class="Clear-Fix"></div>
             </ul>
           </div>
+          <div class="Clear-Fix"></div>
         </div>
         <div class="Client-Feedback-Slide-Buttons">
           <div class="Slide-Button-1"></div>
@@ -343,7 +349,7 @@
     <div class="Blog-Section" id="Blog">
       <div class="Container">
         <h2 class="Text-Align-Center">Our Blog</h2>
-        <div class="Blog-Section-Card">
+        <div class="Blog-Section-Card sm-100 md-33">
           <div class="web-design-Blog-Post">
             <a href="index.html"
               ><img src="./images/blog/12.jpg" alt="Web Design Blog Post Image"
@@ -362,7 +368,7 @@
             </div>
           </div>
         </div>
-        <div class="Blog-Section-Card">
+        <div class="Blog-Section-Card sm-100 md-33">
           <div class="development-Blog-Post">
             <iframe
               width="auto"
@@ -388,7 +394,7 @@
             </div>
           </div>
         </div>
-        <div class="Blog-Section-Card">
+        <div class="Blog-Section-Card sm-100 md-33">
           <div class="Full-Width-Blog-Post">
             <a href="index.html"
               ><img src="./images/blog/32.jpg" alt="Full Width Blog Post Image"
@@ -417,7 +423,7 @@
         <div class="Contact-Section-Content">
           <form action="">
             <ul>
-              <li>
+              <li class="sm-100 md-50">
                 <input
                   type="text"
                   id="Name"
@@ -427,7 +433,7 @@
                   required
                 />
               </li>
-              <li>
+              <li class="sm-100 md-50">
                 <input
                   type="email"
                   id="Email"

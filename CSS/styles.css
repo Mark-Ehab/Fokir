@@ -112,6 +112,7 @@ button {
 /***************************************Navigation Bar Style***************************************/
 div.Nav-Bar {
   /* background-color: cornflowerblue; */
+  position: relative;
 }
 
 div.Nav-Bar div.Nav-Bar-Left {
@@ -138,13 +139,12 @@ div.Nav-Bar div.Nav-Bar-Right {
 
 div.Nav-Bar div.Nav-Bar-Right ul {
   padding-left: 15px;
-  /* width: 64%; */
   float: right;
 }
 
 div.Nav-Bar div.Nav-Bar-Right ul li {
   display: inline-block;
-  padding-inline: 10px;
+  /* padding-inline: 10px; */
 }
 
 div.Nav-Bar div.Nav-Bar-Right ul li a {
@@ -162,6 +162,16 @@ div.Nav-Bar div.Nav-Bar-Right ul li a:hover {
 div.Nav-Bar div.Nav-Bar-Right ul li.Nav-Bar-Right-Last-Link {
   display: inline-block;
   padding-right: 0px;
+}
+
+div.Nav-Bar div.Nav-Bar-Triple-Bars {
+  color: white;
+  font-size: 25px;
+  padding: 9px;
+  border: 0.667px solid transparent;
+  float: right;
+  position: relative;
+  top: 10px;
 }
 
 /***************************************Home Section Style***************************************/
@@ -287,9 +297,9 @@ div.About-Section {
 
 div.About-Section-Left {
   /* background-color: teal; */
-  width: 33.3333%;
+  /* width: 33.3333%; */
   padding-inline: 15px 15px;
-  margin-left: 8.33333333%;
+  /* margin-left: 8.33333333%; */
   float: left;
 }
 
@@ -306,7 +316,6 @@ div.About-Section-Left
   /* background-color: blue; */
   width: 100%;
   border-radius: 5px;
-  position: relative;
   position: relative;
   top: 25px;
   left: 25px;
@@ -352,8 +361,10 @@ div.About-Section-Left
   div.About-Section-Left-Profile-Pic-Overlay-Layer
   ul {
   /* background-color: bisque; */
-  width: 50%;
-  margin-inline: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 div.About-Section-Left
@@ -392,7 +403,7 @@ div.About-Section-Left
 
 div.About-Section-Right {
   /* background-color: darkblue; */
-  width: 58.3333%;
+  /* width: 58.3333%; */
   padding-inline: 15px;
   float: left;
 }
@@ -445,6 +456,7 @@ div.About-Section-Right
   ul
   li {
   margin-bottom: 25px;
+  line-height: 16px;
 }
 
 div.About-Section-Right
@@ -577,7 +589,7 @@ div.Services-Section-Card-Row {
 
 div.Services-Section-Card-Row div.Services-Section-Card {
   /* background-color: darkmagenta; */
-  width: 25%;
+  width: 100%;
   float: left;
   padding: 40px 15px;
 }
@@ -677,7 +689,7 @@ div.Portfolio-Section ul li button span {
 div.Portfolio-Section div.Portfolio-Section-Card {
   /* background-color: chocolate; */
   padding-inline: 15px;
-  width: 33.333%;
+  /* width: 33.333%; */
   float: left;
 }
 
@@ -721,7 +733,7 @@ div.Stats-Section {
 }
 
 div.Stats-Section ul li {
-  width: 25%;
+  width: 100%;
   padding-inline: 15px;
   float: left;
 }
@@ -789,8 +801,7 @@ div.Client-Feedback-Section h2::after {
 
 div.Client-Feedback-Section div.Client-Feedback-Item {
   background-color: rgb(241, 241, 241);
-  width: 66.66581196581197%;
-  margin-inline: auto;
+  width: 100%;
   padding-inline: 15px;
   border-radius: 5px;
   padding: 40px;
@@ -802,18 +813,19 @@ div.Client-Feedback-Section div.Client-Feedback-Item {
 div.Client-Feedback-Section div.Client-Feedback-Item div.Left-Top-Red-Arrow {
   background-color: rgb(255, 48, 91);
   width: 100%;
-  height: 100%;
   position: absolute;
-  bottom: 100%;
-  right: 34%;
-  transform: rotate(-45deg);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  transform: rotate(-45deg) translateY(-393px);
 }
 
 div.Client-Feedback-Section
   div.Client-Feedback-Item
   div.Client-Feedback-Item-Left {
   /* background-color: deepskyblue; */
-  width: 15.7%;
+  width: 15%;
+  float: left;
   position: relative;
 }
 
@@ -825,15 +837,15 @@ div.Client-Feedback-Section
   border-radius: 50%;
   margin-block: 12px;
   display: block;
-  position: absolute;
 }
 
 div.Client-Feedback-Section
   div.Client-Feedback-Item
   div.Client-Feedback-Item-Right {
   /* background-color: mediumvioletred; */
-  width: 100%;
-  padding-inline: 130px 40px;
+  width: 85%;
+  padding-inline: 20px 40px;
+  float: left;
 }
 
 div.Client-Feedback-Section
@@ -872,7 +884,7 @@ div.Client-Feedback-Section
   p {
   color: RGB(85, 85, 85);
   font-size: 16px;
-  font-family: 400;
+  font-weight: 400;
   font-style: italic;
   line-height: 25px;
   margin-bottom: 15px;
@@ -906,9 +918,11 @@ div.Client-Feedback-Section
 
 div.Client-Feedback-Section div.Client-Feedback-Slide-Buttons {
   /* background-color: aquamarine; */
-  width: 4%;
-  margin-inline: auto;
-  margin-top: 5px;
+  width: fit-content;
+  margin-top: 10px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 div.Client-Feedback-Section
@@ -982,13 +996,14 @@ div.Blog-Section h2::after {
 
 div.Blog-Section div.Blog-Section-Card {
   /* background-color: brown; */
-  width: 33.333%;
+  /* width: 33.333%; */
   padding-inline: 15px;
   float: left;
 }
 
 div.Blog-Section div.Blog-Section-Card div {
   background-color: white;
+  margin-bottom: 30px;
 }
 
 div.Blog-Section div.Blog-Section-Card div a {
@@ -1062,6 +1077,7 @@ div.Blog-Section
 /***************************************Contact Section Style***************************************/
 div.Contact-Section {
   padding-block: 100px;
+  position: relative;
 }
 
 div.Contact-Section h2 {
@@ -1101,12 +1117,18 @@ div.Contact-Section h2::after {
 
 div.Contact-Section div.Contact-Section-Content {
   /* background-color: chartreuse; */
-  width: 66.66581196581197%;
-  margin: auto;
+  width: 100%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 div.Contact-Section div.Contact-Section-Content ul {
   /* background-color: blue; */
+}
+
+div.Contact-Section div.Contact-Section-Content form {
+  width: 100%;
 }
 
 div.Contact-Section div.Contact-Section-Content ul li {
@@ -1118,7 +1140,7 @@ div.Contact-Section div.Contact-Section-Content ul li {
 
 div.Contact-Section div.Contact-Section-Content ul li:first-child,
 div.Contact-Section div.Contact-Section-Content ul li:nth-child(2) {
-  width: 50%;
+  width: 100%;
   float: left;
 }
 
@@ -1172,13 +1194,16 @@ div.Contact-Section div.Contact-Section-Content button:hover {
 div.Footer-Section {
   background-color: rgb(51, 51, 51);
   padding-block: 50px;
+  position: relative;
 }
 
 div.Footer-Section ul {
   /* background-color: brown; */
-  width: 13.5%;
-  margin-inline: auto;
+  width: fit-content;
   line-height: 45px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 div.Footer-Section ul li {
@@ -1212,4 +1237,315 @@ div.Footer-Section p a span {
   color: RGB(255, 48, 91);
   font-size: 16px;
   font-weight: 400;
+}
+
+/***************************************Responsive Design Styles Based on Bootstrap Breakpoints***************************************/
+/* Small Screens */
+@media screen and (min-width: 576px) and (max-width: 765px) {
+  /* Navigation Bar */
+  div.Nav-Bar div.Nav-Bar-Right {
+    display: none;
+  }
+  div.Nav-Bar div.Nav-Bar-Triple-Bars {
+    display: block;
+  }
+  /* Home Section */
+  /* div.Home-Section div.Container div span {
+    font-size: 22px;
+    margin-bottom: 10px;
+    line-height: 24px;
+  } */
+  /* div.Home-Section div.Container div h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+    line-height: 41.792px;
+  } */
+  /* div.Home-Section div.Container div div span {
+    font-size: 18px;
+    line-height: 21.594px;
+    overflow: auto;
+  } */
+  /* Container */
+  div.Container {
+    width: 450px;
+  }
+  /* About Section */
+  div.About-Section {
+    padding-block: 60px;
+  }
+  div.About-Section-Left {
+    margin-left: 0;
+  }
+  div.About-Section-Left div.About-Section-Left-Profile-Pic-Frame {
+    box-shadow: 0 0 0 0px;
+  }
+  div.About-Section-Left
+    div.About-Section-Left-Profile-Pic-Frame
+    div.About-Section-Left-Profile-Pic {
+    top: 0;
+    left: 0;
+  }
+  div.About-Section-Right div.About-Section-Right-Content {
+    padding-left: 0;
+    margin-top: 30px;
+  }
+  div.About-Section-Right
+    div.About-Section-Right-Content
+    div.About-Section-Right-Intro
+    h2 {
+    margin-bottom: 25px;
+  }
+  div.About-Section-Right
+    div.About-Section-Right-Content
+    div.About-Section-Right-Intro
+    p {
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+  }
+  div.About-Section-Right
+    div.About-Section-Right-Content
+    div.About-Section-Right-Profile
+    ul
+    li {
+    margin-bottom: 25px;
+    width: 100% !important;
+  }
+
+  div.About-Section-Right
+    div.About-Section-Right-Content
+    div.About-Section-Right-Profile
+    ul
+    li
+    span,
+  div.About-Section-Right
+    div.About-Section-Right-Content
+    div.About-Section-Right-Profile
+    ul
+    li
+    p,
+  div.About-Section-Right
+    div.About-Section-Right-Content
+    div.About-Section-Right-Profile
+    ul
+    li
+    a {
+    font-size: 16px;
+  }
+  /* Stats Section */
+  div.Stats-Section {
+    padding-block: 60px 30px;
+  }
+  div.Stats-Section ul li {
+    margin-bottom: 30px;
+  }
+}
+/* Medium Screens */
+@media screen and (min-width: 768px) {
+  /* Navigation Bar */
+  div.Nav-Bar div.Nav-Bar-Right ul li {
+    padding-inline: 8px;
+  }
+  div.Nav-Bar div.Nav-Bar-Triple-Bars {
+    display: none;
+  }
+  /* Client's Feedback Section */
+  div.Client-Feedback-Section
+    div.Client-Feedback-Item
+    div.Client-Feedback-Item-Left {
+    width: 15% !important;
+  }
+  div.Client-Feedback-Section
+    div.Client-Feedback-Item
+    div.Client-Feedback-Item-Right {
+    width: 85% !important;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  /* Container */
+  div.Container {
+    width: 750px;
+  }
+  /* About Section */
+  div.About-Section {
+    padding-block: 70px;
+  }
+  div.About-Section-Left {
+    margin-left: 0;
+  }
+  div.About-Section-Left div.About-Section-Left-Profile-Pic-Frame {
+    box-shadow: 0 0 0 0px;
+  }
+  div.About-Section-Left
+    div.About-Section-Left-Profile-Pic-Frame
+    div.About-Section-Left-Profile-Pic {
+    top: 0;
+    left: 0;
+  }
+  div.About-Section-Right div.About-Section-Right-Content {
+    padding-left: 0;
+  }
+  div.About-Section-Right
+    div.About-Section-Right-Content
+    div.About-Section-Right-Intro
+    h2 {
+    margin-bottom: 15px;
+  }
+  div.About-Section-Right
+    div.About-Section-Right-Content
+    div.About-Section-Right-Intro
+    p {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+  }
+  div.About-Section-Right
+    div.About-Section-Right-Content
+    div.About-Section-Right-Profile
+    ul
+    li {
+    margin-bottom: 16px;
+  }
+
+  div.About-Section-Right
+    div.About-Section-Right-Content
+    div.About-Section-Right-Profile
+    ul
+    li
+    span,
+  div.About-Section-Right
+    div.About-Section-Right-Content
+    div.About-Section-Right-Profile
+    ul
+    li
+    p,
+  div.About-Section-Right
+    div.About-Section-Right-Content
+    div.About-Section-Right-Profile
+    ul
+    li
+    a {
+    font-size: 14px;
+  }
+  /* Client's Feedback Section */
+  div.Client-Feedback-Section {
+    padding-block: 70px;
+  }
+}
+
+/* Large Screens */
+@media screen and (min-width: 992px) {
+  /* Navigation Bar */
+  div.Nav-Bar div.Nav-Bar-Right ul li {
+    padding-inline: 10px;
+  }
+  /* About Section */
+  div.About-Section-Left {
+    width: 33.3333% !important;
+    margin-left: 8.33333333%;
+  }
+  div.About-Section-Right {
+    width: 58.3333% !important;
+  }
+  /* Contact Section */
+  div.Contact-Section div.Contact-Section-Content {
+    /* background-color: chartreuse; */
+    width: 66.66581196581197%;
+  }
+  /* Client's Feedback Section */
+  div.Client-Feedback-Section div.Client-Feedback-Item {
+    background-color: rgb(241, 241, 241);
+    width: 66.66581196581197%;
+    margin-inline: auto;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  /* Container */
+  div.Container {
+    width: 970px;
+  }
+  /* About Section */
+  div.About-Section {
+    padding-block: 80px;
+  }
+  div.About-Section-Right div.About-Section-Right-Content {
+    padding-left: 28px;
+  }
+  div.About-Section-Right
+    div.About-Section-Right-Content
+    div.About-Section-Right-Intro
+    h2 {
+    margin-bottom: 20px;
+  }
+
+  div.About-Section-Right
+    div.About-Section-Right-Content
+    div.About-Section-Right-Intro
+    p {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+  div.About-Section-Right
+    div.About-Section-Right-Content
+    div.About-Section-Right-Profile
+    ul
+    li {
+    margin-bottom: 15px;
+  }
+  /* Client's Feedback Section */
+  div.Client-Feedback-Section {
+    padding-block: 80px;
+  }
+}
+
+/* Screens Smaller than Medium Screens Breakpoint */
+@media screen and (max-width: 768px) {
+  /* Contact Section */
+  div.Contact-Section {
+    padding-block: 60px;
+  }
+  div.Contact-Section h2 {
+    margin-bottom: 32px;
+  }
+  /* Client's Feedback Section */
+  div.Client-Feedback-Section {
+    padding-block: 60px;
+  }
+  div.Client-Feedback-Section div.Client-Feedback-Item div.Left-Top-Red-Arrow {
+    transform: rotate(-45deg) translateY(-90%);
+  }
+  div.Client-Feedback-Section
+    div.Client-Feedback-Item
+    div.Client-Feedback-Item-Left
+    img {
+    width: 33.333%;
+    margin: 12px auto;
+  }
+  div.Client-Feedback-Section
+    div.Client-Feedback-Item
+    div.Client-Feedback-Item-Right {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Screens Smaller than Small Screens Breakpoint */
+@media screen and (max-width: 576px) {
+  /* Navigation Bar */
+  div.Nav-Bar div.Nav-Bar-Right {
+    display: none;
+  }
+  div.Nav-Bar div.Nav-Bar-Triple-Bars {
+    display: block;
+  }
+  /* Client's Feedback Section */
+  div.Client-Feedback-Section
+    div.Client-Feedback-Item
+    div.Client-Feedback-Item-Left {
+    width: 100%;
+  }
+  div.Client-Feedback-Section
+    div.Client-Feedback-Item
+    div.Client-Feedback-Item-Right {
+    width: 100%;
+    padding: 0;
+  }
 }
