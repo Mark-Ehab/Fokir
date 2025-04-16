@@ -1236,6 +1236,10 @@ div.Footer-Section p a span {
 /***************************************Responsive Design Styles Based on Bootstrap Breakpoints***************************************/
 /* Small Screens */
 @media screen and (min-width: 576px) and (max-width: 765px) {
+  /* Container */
+  div.Container {
+    width: 450px;
+  }
   /* Navigation Bar */
   div.Nav-Bar div.Nav-Bar-Right {
     display: none;
@@ -1244,24 +1248,20 @@ div.Footer-Section p a span {
     display: block;
   }
   /* Home Section */
-  /* div.Home-Section div.Container div span {
+  div.Home-Section div.Container div span {
     font-size: 22px;
     margin-bottom: 10px;
     line-height: 24px;
-  } */
-  /* div.Home-Section div.Container div h1 {
+  }
+  div.Home-Section div.Container div h1 {
     font-size: 38px;
     margin-bottom: 10px;
     line-height: 41.792px;
-  } */
-  /* div.Home-Section div.Container div div span {
+  }
+  div.Home-Section div.Container div div span {
     font-size: 18px;
-    line-height: 21.594px;
-    overflow: auto;
-  } */
-  /* Container */
-  div.Container {
-    width: 450px;
+    line-height: 29px;
+    overflow: hidden;
   }
   /* About Section */
   div.About-Section {
@@ -1533,6 +1533,91 @@ div.Footer-Section p a span {
   }
   div.Nav-Bar div.Nav-Bar-Triple-Bars {
     display: block;
+  }
+  /* Home Section */
+  div.Home-Section div.Container div span {
+    font-size: 22px;
+    margin-bottom: 10px;
+    line-height: 24px;
+  }
+  div.Home-Section div.Container div h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+    line-height: 41.792px;
+  }
+  div.Home-Section div.Container div div span {
+    font-size: 18px;
+    line-height: 29px;
+    overflow: hidden;
+  }
+  /* About Section */
+  div.About-Section {
+    padding-block: 60px;
+  }
+  div.About-Section-Left {
+    margin-left: 0;
+  }
+  div.About-Section-Left div.About-Section-Left-Profile-Pic-Frame {
+    box-shadow: 0 0 0 0px;
+  }
+  div.About-Section-Left
+    div.About-Section-Left-Profile-Pic-Frame
+    div.About-Section-Left-Profile-Pic {
+    top: 0;
+    left: 0;
+  }
+  div.About-Section-Right div.About-Section-Right-Content {
+    padding-left: 0;
+    margin-top: 30px;
+  }
+  div.About-Section-Right
+    div.About-Section-Right-Content
+    div.About-Section-Right-Intro
+    h2 {
+    margin-bottom: 25px;
+  }
+  div.About-Section-Right
+    div.About-Section-Right-Content
+    div.About-Section-Right-Intro
+    p {
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+  }
+  div.About-Section-Right
+    div.About-Section-Right-Content
+    div.About-Section-Right-Profile
+    ul
+    li {
+    margin-bottom: 25px;
+    width: 100% !important;
+  }
+
+  div.About-Section-Right
+    div.About-Section-Right-Content
+    div.About-Section-Right-Profile
+    ul
+    li
+    span,
+  div.About-Section-Right
+    div.About-Section-Right-Content
+    div.About-Section-Right-Profile
+    ul
+    li
+    p,
+  div.About-Section-Right
+    div.About-Section-Right-Content
+    div.About-Section-Right-Profile
+    ul
+    li
+    a {
+    font-size: 16px;
+  }
+  /* Stats Section */
+  div.Stats-Section {
+    padding-block: 60px 30px;
+  }
+  div.Stats-Section ul li {
+    margin-bottom: 30px;
   }
   /* Client's Feedback Section */
   div.Client-Feedback-Section
